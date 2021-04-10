@@ -13,30 +13,51 @@ export default {
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
-  css: [
-  ],
+  css: [{ src: "~/assets/scss/main.scss", lang: "scss" }],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
-  plugins: [
-  ],
+  plugins: [],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
   components: true,
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+    '@nuxtjs/google-fonts'
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    '@nuxtjs/axios'
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-  }
+  build: {},
+
+  googleFonts: {
+    families: {
+      "Lato": {
+        wght: [100, 300, 400]
+      },
+      "Open Sans" : {
+        wght: [300, 400, 600]
+      },
+      "Pompiere": {
+        wght: [400]
+      },
+      "Roboto": {
+        wght: [100, 300, 400, 500]
+      },
+      "Sacramento": {
+        wght: [400]
+      },
+      "Ubuntu": {
+        wght: [300, 400, 500]
+      },
+}
+}
 }
