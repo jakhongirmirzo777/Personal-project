@@ -1,0 +1,24 @@
+%clear-outline {
+  &:active, &:focus {
+    outline: none;
+  }
+}
+//@extend %clear-outline;
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.border-none {
+  border: none;
+  &:focus {
+    outline: none;
+  }
+}

@@ -1,0 +1,53 @@
+.font-thin {
+  font-weight: 300;
+}
+
+.font-bolder {
+  font-weight: 500;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.text-no-wrap {
+  white-space: nowrap;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1, .h1 {
+  font-size: 3.6rem;
+}
+
+h2, .h2 {
+  font-size: 2.4rem;
+}
+
+h3, .h3 {
+  font-size: 1.6rem;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
