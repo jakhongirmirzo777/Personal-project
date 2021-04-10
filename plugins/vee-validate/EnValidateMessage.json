@@ -1,6 +1,6 @@
 {
   "messages": {
     "required": "Поле {_field_} может содержать только буквы en",
-    "min": "Поле {_field_} sds en"
+    "min": "Поле {_field_} sds {length}"
   }
 }
