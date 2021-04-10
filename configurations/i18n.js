@@ -22,9 +22,10 @@ export const i18N = {
   },
   vueI18n: {
     fallbackLocale: "en",
+    messages: { en, ru, uz },
     warnHtmlInMessage: 'off',
     disableNoTranslationWarning: true,
-    messages: { en, ru, uz }
+    silentTranslationWarn: true
   }
 };
 
