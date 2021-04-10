@@ -1,0 +1,6 @@
+{
+  "messages": {
+    "required": "Поле {_field_} может содержать только буквы uz",
+    "min": "Поле {_field_} sds uz"
+  }
+}
