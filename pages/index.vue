@@ -8,19 +8,19 @@
       </div>
       <div class='col-lg-8'>
         <div class='home__content'>
-          <div class='home__content__top'>
-            <h2>I'm Jakhongirmirzo Tursunaliev <br>
+          <div class='home__content__top mb-2'>
+            <h2>I'm Jakhongirmirzo Tursunaliev. <br>
               <span>Web developer</span>
             </h2>
           </div>
-          <div class='home__content__center'>
+          <div class='home__content__center mb-5'>
             <p>
               I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly
               experiences, I am passionate about building excellent software that improves the lives of those around me.
             </p>
           </div>
           <div class='home__content__bottom'>
-            <nuxt-link :to="localePath('/about')">More about me <span>arrow</span></nuxt-link>
+            <nuxt-link :to="localePath('/about')"> <span>More about me</span> <span> <RightArrow /> </span></nuxt-link>
           </div>
         </div>
       </div>
@@ -30,13 +30,17 @@
 
 <script>
 import '@/assets/scss/main/pages/home.scss'
-
+import RightArrow from "@/assets/icons/right-arrow.svg"
 export default {
+  components: {
+    RightArrow
+  },
   data() {
     return {
       img: require('~/assets/images/user.jpg')
     }
-  }
+  },
+
 }
 </script>
 

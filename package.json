@@ -13,6 +13,7 @@
     "core-js": "^3.6.5",
     "nuxt": "^2.14.6",
     "nuxt-i18n": "^6.24.0",
+    "nuxt-svg-loader": "^1.2.0",
     "vee-validate": "^3.4.5"
   },
   "devDependencies": {

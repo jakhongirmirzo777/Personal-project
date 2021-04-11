@@ -31,6 +31,7 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
+    'nuxt-svg-loader',
     ['nuxt-i18n',  i18N]
   ],
 

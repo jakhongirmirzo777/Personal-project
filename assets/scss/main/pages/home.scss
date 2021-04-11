@@ -25,21 +25,91 @@
   &__content {
     display: flex;
     height: 100%;
+    padding: 0 17rem;
     flex-direction: column;
     justify-content: center;
 
     &__top {
+      padding-left: 7rem;
       & h2 {
-        font-family: $font-pompiere
+        font-family: $font-poppins;
+        color: $color-yellow;
+        text-transform: uppercase;
+        font-weight: $font-boldest;
+        position: relative;
+        &::before {
+          content: "";
+          border-radius: 10px;
+          height: 0.4rem;
+          width: 4rem;
+          background-color: $color-yellow;
+          position: absolute;
+          top: 3rem;
+          left: -7rem;
+        }
+      }
+
+      & span {
+        color: $color-white;
       }
     }
 
     &__center {
-
+      & p {
+        color: $color-white;
+        font-weight: $font-boldest;
+      }
     }
 
     &__bottom {
+      & a {
+        font-size: 1.7rem;
+        padding: 1.4rem 6.5rem 1.4rem 3rem;
+        vertical-align: sub;
+        text-transform: uppercase;
+        color: $color-white;
+        background-color: $color-primary;
+        font-weight: $font-bold;
+        border-radius: $border-radius-giant;
+        border: 1px solid $color-yellow;
+        position: relative;
 
+        &::before {
+          content: " ";
+          border-radius: 30px 0 0 30px;
+          background-color: $color-yellow;
+          width: 0;
+          height: 100%;
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          right: 2.5rem;
+          transition: all .3s;
+        }
+
+        &:hover::before {
+          width: calc(100% - 25px);
+        }
+
+        & span:nth-child(1){
+          position: relative;
+          z-index: 2;
+        }
+
+        & span:nth-child(2) {
+          background-color: $color-yellow;
+          height: 100%;
+          width: 5.2rem;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 50%;
+          position: absolute;
+          z-index: 2;
+          top: 0;
+          right: 0;
+        }
+      }
     }
 
   }

@@ -36,31 +36,35 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $font-open-sans;
 }
 
-p, .p {
-  font-family: $font-open-sans;
-  font-size: $font-size-p;
-}
-
-a {
-  font-family: $font-open-sans;
-  font-size: $font-size-p;
-  @extend %clear-outline;
-}
-
 h1, .h1 {
   font-size: $font-size-h1;
+  line-height: 1.2;
 }
 
 h2, .h2 {
   font-size: $font-size-h2;
+  line-height: 1.2;
 }
 
 h3, .h3 {
   font-size: $font-size-h3;
+  line-height: 1.2;
+}
+
+p, .p {
+  font-family: $font-open-sans;
+  font-size: $font-size-p;
+  line-height: 35px;
 }
 
 ul {
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+a {
+  font-family: $font-open-sans;
+  font-size: $font-size-p;
+  @extend %clear-outline;
 }
