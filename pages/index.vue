@@ -1,75 +1,44 @@
 <template>
-  <div>
-    <h1> {{ $t("learnMore") }} </h1>
-    <ul>
-      <li>
-        <nuxt-link
-          :to="switchLocalePath('uz')"
-        >
-          Uz
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link :to="switchLocalePath('ru')"
-        >Ru
-        </nuxt-link>
-      </li>
-      <li>
-        <nuxt-link
-          :to="switchLocalePath('en')"
-        >
-          En
-        </nuxt-link>
-      </li>
-    </ul>
-    <div class="container">
-      <h2 style="margin-right: 20px">Info form</h2>
-      <form @submit.prevent="submitForm">
-        <ValidationProvider name="Name" rules="required|min:3" v-slot="{ errors }">
-          <input type="text" v-model="form.name" placeholder="Enter name">
-          <span v-show="errors.length>0" class="is-invalid">{{ errors[0] }}</span>
-        </ValidationProvider>
-
-        <ValidationProvider name="Age" rules="required" v-slot="{ errors }">
-          <input type="text" v-model="form.age" placeholder="Enter age">
-          <span v-show="errors.length>0" class="is-invalid">{{ errors[0]}}</span>
-        </ValidationProvider>
-
-        <button type="submit">Show my info</button>
-      </form>
+  <div class='home__container vh-100 container-fluid'>
+    <div class='row-lg home__wrapper'>
+      <div class='col-lg-4'>
+        <div class='home__photo' :style='{backgroundImage: `url(${img})`}'>
+          &nbsp;
+        </div>
+      </div>
+      <div class='col-lg-8'>
+        <div class='home__content'>
+          <div class='home__content__top'>
+            <h2> I'm Jakhongirmirzo Tursunaliev <br>
+              <span>Web developer</span>
+            </h2>
+          </div>
+          <div class='home__content__center'>
+            <p>
+              I'm a Tunisian based web designer & front‑end developer focused on crafting clean & user‑friendly
+              experiences, I am passionate about building excellent software that improves the lives of those around me.
+            </p>
+          </div>
+          <div class='home__content__bottom'>
+            <nuxt-link :to="localePath('/about')">More about me <span>arrow</span></nuxt-link>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
 
 <script>
+import '@/assets/scss/main/pages/home.scss'
+
 export default {
-  data(){
+  data() {
     return {
-      form :{
-        name: null,
-        age: null
-      }
-    }
-  },
-  methods: {
-    submitForm(){
-      alert(`Name: ${this.form.name} and Age is ${this.form.age}` )
+      img: require('~/assets/images/user.jpg')
     }
   }
 }
 </script>
 
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.is-invalid{
-  color: red;
-}
+<style scoped>
 </style>

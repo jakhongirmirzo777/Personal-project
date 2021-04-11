@@ -1,6 +1,7 @@
 %clear-outline {
-  &:active, &:focus {
+ &, &:hover, &:link, &:active, &:focus {
     outline: none;
+    text-decoration: none;
   }
 }
 //@extend %clear-outline;

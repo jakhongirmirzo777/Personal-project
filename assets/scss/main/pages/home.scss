@@ -1,0 +1,44 @@
+@import "../variables";
+@import "../helper";
+
+.home {
+  &__container {
+    display: flex;
+    align-items: center;
+    padding: $base-padding;
+    background: linear-gradient(75deg, $color-yellow 20%, $color-primary 20% );
+  }
+
+  &__wrapper {
+
+  }
+
+  &__photo {
+    border-radius: $border-radius-giant;
+    box-shadow: 0 0.4rem 1.5rem 0.5rem rgba($color-black, 0.3);
+    background-size: cover;
+    height: calc(100vh - 80px);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__content {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    &__top {
+
+    }
+
+    &__center {
+
+    }
+
+    &__bottom {
+
+    }
+
+  }
+
+}

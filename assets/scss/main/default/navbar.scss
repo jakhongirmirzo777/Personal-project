@@ -1,0 +1,27 @@
+@import "../variables";
+@import "../helper";
+.navbar {
+  &__container {
+    background-color: $color-primary;
+    padding: 3rem $base-padding;
+  }
+
+  &__list {
+
+  }
+
+  &__item {
+    font-family: $font-roboto;
+    font-size: $font-size-nav;
+    font-weight: $font-bolder;
+    color: $color-white;
+  }
+
+  &__link {
+    font-family: $font-roboto;
+    font-size: $font-size-nav;
+    font-weight: $font-bolder;
+    color: $color-white;
+    @extend %clear-outline;
+  }
+}
