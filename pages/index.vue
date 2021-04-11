@@ -9,7 +9,7 @@
       <div class='col-lg-8'>
         <div class='home__content'>
           <div class='home__content__top'>
-            <h2> I'm Jakhongirmirzo Tursunaliev <br>
+            <h2>I'm Jakhongirmirzo Tursunaliev <br>
               <span>Web developer</span>
             </h2>
           </div>

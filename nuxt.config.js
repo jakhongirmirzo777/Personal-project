@@ -44,23 +44,12 @@ export default {
 
   googleFonts: {
     families: {
-      "Lato": {
-        wght: [100, 300, 400]
-      },
       "Open Sans" : {
         wght: [300, 400, 600]
       },
-      "Pompiere": {
-        wght: [400]
-      },
-      "Roboto": {
-        wght: [100, 300, 400, 500]
-      },
-      "Sacramento": {
-        wght: [400]
-      },
-      "Ubuntu": {
-        wght: [300, 400, 500]
+
+      "Poppins": {
+        wght: [100, 200, 300, 400, 500, 600]
       },
 }
 }

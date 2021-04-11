@@ -1,3 +1,5 @@
+@import "./helper";
+
 .font-thin {
   font-weight: $font-thin;
 }
@@ -32,6 +34,17 @@
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $font-open-sans;
+}
+
+p, .p {
+  font-family: $font-open-sans;
+  font-size: $font-size-p;
+}
+
+a {
+  font-family: $font-open-sans;
+  font-size: $font-size-p;
+  @extend %clear-outline;
 }
 
 h1, .h1 {
