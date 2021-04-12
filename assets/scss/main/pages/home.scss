@@ -9,10 +9,6 @@
     background: linear-gradient(75deg, $color-yellow 20%, $color-primary 20%);
   }
 
-  &__wrapper {
-
-  }
-
   &__photo {
     border-radius: $border-radius-giant;
     box-shadow: 0 0.4rem 1.5rem 0.5rem rgba($color-black, 0.3);
@@ -25,7 +21,7 @@
   &__content {
     display: flex;
     height: 100%;
-    padding: 0 17rem;
+    padding: 0 3rem 0 17rem;
     flex-direction: column;
     justify-content: center;
 

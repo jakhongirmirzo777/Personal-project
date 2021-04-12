@@ -40,7 +40,6 @@ export default {
       img: require('~/assets/images/user.jpg')
     }
   },
-
 }
 </script>
 
