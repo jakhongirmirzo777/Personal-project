@@ -32,8 +32,8 @@
       font-weight: $font-bold;
       text-transform: uppercase;
       transform: translateX(2rem);
+      transition: all .3s;
       opacity: 0;
-      transition: all .2s;
     }
 
     & span:nth-child(2) {
@@ -51,7 +51,7 @@
     &::before {
       content: "";
       height: 100%;
-      width: 0;
+      width: 55%;
       margin-right: 5.5rem;
       position: absolute;
       top: 0;
